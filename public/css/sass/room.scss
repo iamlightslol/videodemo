@@ -1,0 +1,85 @@
+@import "variables";
+@import "filters";
+@import "chatBox";
+
+section {
+}
+
+body {
+    // Crutches: these should be removed while modularizing the styles.
+    // It was put here just to help make things "work" and get a usable 
+    // version out.
+    @include radialBackground( $darkBrown, $lightBrown );
+
+    * { box-sizing: content-box; }
+
+    // TODO: list of modules
+    // * StreamsContainer
+    // * StreamContainer
+    // * ChatArea
+    // * VideoEffects?
+
+    .container{
+      position: fixed;
+      top:0;
+      bottom:0;
+      right:0;
+      left:0;
+      margin: 0;
+      padding: 0;
+      width:auto;
+      height: 100%;
+      transition: all 0.5s;
+      -webkit-transition: all 0.5s;
+    }
+
+    #streams_container{
+      position:absolute;
+      top: 0px;
+      bottom: 42px;
+      right: $chatRoomWidth;
+      left: 0px;
+      text-align:center;
+      box-sizing: border-box;
+
+      .streamContainer{
+        display: inline-block;
+        position: relative;
+        text-align:center;
+        box-sizing: border-box;
+        .OT_video-container{
+          transition: width 1s;
+          -webkit-transition: width 1s;
+        }
+      }
+
+      .subscriber_stream_content:hover .flagUser{
+      }
+
+      .flagUser{
+        position:absolute;
+        top:10px;
+        left:0px;
+        right:0px;
+        margin: auto;
+        border:none;
+        box-shadow:0.15em 0.25em 0.33em rgba(0, 0, 0, 0.3);
+        background-color:#C40A68;
+        color:white;
+        font-size:15px;
+        padding:10px;
+        border-radius:7px;
+        width: 110px;
+        height: 20px;
+        text-align:center;
+        cursor:pointer;
+        display:none;
+      }
+    }
+
+    .clickThrough{
+      pointer-events:none;
+    }
+
+}
+
