@@ -465,7 +465,7 @@
         message: "-----------"
       }));
       this.displayChatMessage(this.notifyTemplate({
-        message: "Welcome to OpenTokRTC by TokBox"
+        message: "Welcome to Alternet Therapy"
       }));
       this.displayChatMessage(this.notifyTemplate({
         message: "Type /nick your_name to change your name"
