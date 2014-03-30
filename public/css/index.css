@@ -36,7 +36,7 @@ body {
   background-image: -o-radial-gradient(50% 50%, circle, #FFF, #CFCFCF);
   min-height: 100%;*/ }
 
-  #insidecontainer {
+  div#insidecontainer {
   background:#fff;
   }
 
@@ -138,3 +138,10 @@ input:-ms-input-placeholder {
 
 #infoBox {
   margin-top: 50px; }
+
+hr {
+margin: 20px 0;
+border: 0;
+border-top: 1px solid #009BDA;
+border-bottom: 1px solid rgba(0, 85, 165, 0.34);
+}
