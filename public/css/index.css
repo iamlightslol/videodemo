@@ -44,10 +44,10 @@ body {
     border-top-right-radius: 4px;
     color: #FFF;}
 
-  #insidecontainer {
+  #insideContainer {
     background: url(../img/info_bg.png)!important;
     border-radius: 4px;
-    padding-bottom: 15px;
+    padding: 15px;
     -webkit-box-shadow: 0px 0px 100px 0px #333333;
     -moz-box-shadow: 0px 0px 100px 0px #333333;
     box-shadow: 0px 0px 100px 0px #333333;}
@@ -161,3 +161,4 @@ border: 0;
 border-top: 1px solid #009BDA;
 border-bottom: 1px solid rgba(0, 85, 165, 0.34);
 }
+
