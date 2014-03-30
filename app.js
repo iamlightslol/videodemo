@@ -7,8 +7,8 @@ var OpenTokLibrary = require('opentok');
 // ***
 // *** OpenTok Constants for creating Session and Token values
 // ***
-var OTKEY = "44712052";
-var OTSECRET = "b8cffb73d5c54747b2317d0a2dbbbab9278bf789";
+var OTKEY = '44712052';
+var OTSECRET = 'b8cffb73d5c54747b2317d0a2dbbbab9278bf789';
 var OpenTokObject = new OpenTokLibrary.OpenTokSDK(OTKEY, OTSECRET);
 
 // ***
