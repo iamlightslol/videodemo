@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Alternet Therapy Demo, You are talkign with: <%= rid %></title>
+  <title>WebRTC Demo - Video chatting in room <%= rid %></title>
   <% include _header %>
   <link rel="stylesheet" href="/css/room.css" />
   <script src="//swww.tokbox.com/webrtc/v2.2/js/TB.min.js"></script>
@@ -24,8 +24,8 @@
         <h1 class="titleText"><%= rid %></h1>
         <p>
         Invite: 
-         <a href="mailto:?subject=Join me in a Video Conference&body=Please join me in a video conference at http://nameless-thicket-5296.herokuapp.com/<%= rid %>">
-            http://nameless-thicket-5296.herokuapp.com/<%= rid %>
+         <a href="mailto:?subject=Join me in a Video Conference&body=Please join me in a video conference at https://OpenTokRTC.com/<%= rid %>">
+            https://opentokrtc.com/<%= rid %>
          </a> 
         </p>
       </div>
@@ -39,8 +39,13 @@
   </div>
 
   <div id="filterContainer">
-    <h1>Text</h1>
+    <h1>Filters: </h1>
     <div id="filterOptions">
+      <h1 class="filterOption" data-value="Blur">Blur</h1>
+      <h1 class="filterOption" data-value="Sepia">Sepia</h1>
+      <h1 class="filterOption" data-value="Grayscale" >Grayscale</h1>
+      <h1 class="filterOption" data-value="Invert" >Invert</h1>
+      <h1 class="filterOption optionSelected" data-value="None">None</h1>
     </div>
   </div>
 </div>
@@ -65,5 +70,8 @@
 <script type="text/javascript">
   new User("<%= rid %>", "<%= apiKey %>", "<%= sid %>", "<%= token %>");
 </script>
+
+<% include _analytics %>
+
 </body>
 </html>
