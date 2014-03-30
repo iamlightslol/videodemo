@@ -20,14 +20,14 @@ html, body {
   height: 100%; }
 
 body {
-  background: #E0E0E0 no-repeat center center fixed;
-  /* Old browsers */
-  background-image: radial-gradient(circle at 50% 50%, #433931, #1e1916);
-  background-image: -webkit-radial-gradient(50% 50%, circle, #433931, #1e1916);
-  background-image: -moz-radial-gradient(50% 50%, circle, #433931, #1e1916);
-  background-image: -ms-radial-gradient(50% 50%, circle, #433931, #1e1916);
-  background-image: -o-radial-gradient(50% 50%, circle, #433931, #1e1916);
-  min-height: 100%; }
+  background: url(../img/bg_tile.png);
+  /* Old browsers 
+  background-image: -radial-gradient(circle at 50% 50%, #FFF, #CFCFCF);
+  background-image: -webkit-radial-gradient(50% 50%, circle, #FFF, #CFCFCF);
+  background-image: -moz-radial-gradient(50% 50%, circle, #FFF, #CFCFCF);
+  background-image: -ms-radial-gradient(50% 50%, circle, #FFF, #CFCFCF);
+  background-image: -o-radial-gradient(50% 50%, circle, #FFF, #CFCFCF);
+  min-height: 100%;*/ }
 
 .container {
   width: 960px;
@@ -41,7 +41,7 @@ body {
 
 body, input {
   font-family: "AvantGardeGothicITCW01X";
-  color: #474747; }
+  color: #000; }
 
 h1 {
   font-family: "AvantGardeGothicITCW01X";
@@ -57,7 +57,7 @@ h1 {
   text-align: center; }
 
 #roomName {
-  background-color: transparent;
+  background-color: rgba(138, 138, 138, 0.51);
   border-style: solid;
   border-width: 0px 0px 3px 0px;
   border-color: #88889a;
