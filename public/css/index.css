@@ -45,7 +45,7 @@ body {
     color: #FFF;}
 
   #insidecontainer {
-    background: url(../img/info_bg.png);
+    background: url(../img/info_bg.png)!important;
     border-radius: 4px;
     padding-bottom: 15px;
     -webkit-box-shadow: 0px 0px 100px 0px #333333;
