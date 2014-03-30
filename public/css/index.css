@@ -20,7 +20,7 @@ html, body {
   height: 100%; }
 
 body {
-  background: #433931 no-repeat center center fixed;
+  background: ##E0E0E0 no-repeat center center fixed;
   /* Old browsers */
   background-image: radial-gradient(circle at 50% 50%, #433931, #1e1916);
   background-image: -webkit-radial-gradient(50% 50%, circle, #433931, #1e1916);
@@ -36,12 +36,12 @@ body {
   text-align: center; }
   .container #alternetLogo {
     position: fixed;
-    bottom: 20px;
-    right: 20px; }
+    top: 20px;
+    left: 20px; }
 
 body, input {
   font-family: "AvantGardeGothicITCW01X";
-  color: #ffffff; }
+  color: #474747; }
 
 h1 {
   font-family: "AvantGardeGothicITCW01X";
@@ -74,7 +74,7 @@ h1 {
 
 #submitButton {
   background-color: #ffffff;
-  width: 150px;
+  width: 200px;
   height: 60px;
   box-sizing: border-box;
   line-height: 100%;
